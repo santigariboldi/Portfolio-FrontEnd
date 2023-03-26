@@ -1,0 +1,30 @@
+.container{
+    width: auto;
+}
+
+.descripcion, .imagen{
+    display: inline-block;
+    text-align: justify;
+}
+
+#fotoDeProyecto{
+    width: 25%;
+    border-radius: 3%;
+    box-shadow: 5px 5px #fab819;
+}
+
+td{
+    vertical-align:middle;
+    
+}
+
+#nombre{
+    color: #fab917;
+    text-shadow: 2px 2px #cb4e8d;
+}
+
+.td-img {
+    text-align: center;
+    width:25%;
+}
+

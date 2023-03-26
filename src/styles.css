@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: C64;
+    src: url(assets/fuente/C64_TrueType_v1.2.1-STYLE/C64_TrueType_v1.2.1-STYLE/fonts/C64_Pro-STYLE.ttf) format('truetype');
+}
+
+.C64{
+    font-family: C64;
+}
+
+body{
+    font-family: C64;
+    background-color: black;
+}
+
+
+h1{
+    text-shadow:  #5b34bf 4px 4px;
+    color: white;
+}
+
+td{
+    color: white;
+}
+
+.row {
+    --bs-gutter-x:0;
+    padding: 20px;
+}
+
+.container-fluid {
+    --bs-gutter-x:0;
+}
+
+table {
+    width: 100%;
+}
+
+.edit-btn {
+    width:3%;
+}

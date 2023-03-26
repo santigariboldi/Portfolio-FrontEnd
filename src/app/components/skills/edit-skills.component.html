@@ -1,0 +1,32 @@
+<section class="vh-100 gradient-custom">
+    <div>
+        <img src="../../../assets/logo-argentina-programa.png" id="logo">
+    </div>
+<div class="container" *ngIf="skills">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <br>
+                <div class="form-group">
+                    <label for="nombre">Nombre de la skill</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skills.nombre" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="porcentaje">Porcentaje</label>
+                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skills.porcentaje" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="skill_image_url">Seleccionar imagen de la skill</label>
+                    <input type="file" class="form-control" id="skill_image_url" name="skill_image_url" [(ngModel)]="skills.skill_image_url" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                <br>
+                <button class="btn btn-primary">
+                    Editar skill
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>

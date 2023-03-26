@@ -1,0 +1,53 @@
+.header{
+    background-color: #7fb7be;
+}
+
+#logo-header {
+    width: 190px;
+}
+
+.logo-redes {
+    width: 45px;
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    padding: 10px;
+}
+
+.acerca{
+    background-color: #d3f3ee;
+    text-align: center;
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 0%;
+}
+
+@media (min-width: 576px){
+    #fotoDePerfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 5%;
+        box-shadow: 3px 3px 3px #7FB7BE;
+        left: 3%;
+        top: 500px;
+    }
+}
+
+@media (max-width: 576px){
+    #fotoDePerfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 5%;
+        box-shadow: 3px 3px 3px #7FB7BE;
+        left: 35%;
+        top: 375px;
+    }
+}
+

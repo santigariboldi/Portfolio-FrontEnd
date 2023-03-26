@@ -1,0 +1,51 @@
+<div class="row">
+
+    <h1>Hard & Soft Skills</h1>
+
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-info" routerLink="/newskill" *ngIf="isLogged">
+            Agregar skill
+        </button>
+    </div>
+
+    <div class="row"></div>
+
+
+    <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skills of skills">
+        <circle-progress
+            [percent]="(skills.porcentaje)"
+            [radius]="70"
+            [outerStrokeWidth]="12"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#c5519b'"
+            [outerStrokeGradient]="true"
+            [outerStrokeGradientStopColor]="'#fab917'"
+            [innerStrokeColor]="'#fab917'"
+            [animation]="true"
+            [animationDuration]="500"
+            [clockwise]="false"
+            [showUnits]="false"
+            [imageSrc]="(skills.skill_image_url)"
+            [title]="(skills.nombre)"
+            [titleColor]="'#fab917'"
+            [showTitle]="true"
+            [showSubtitle]="true"
+            [showImage]="true"
+            [imageHeight]="70"
+            [imageWidth]="70"  
+        ></circle-progress>
+        <span id="titulo">{{skills.nombre}}</span>
+        
+        <div>
+            <td *ngIf="isLogged">
+                <button class="btn btn-warning" routerLink="/editskill/{{skills.id}}"><i class="bi bi-pen-fill"></i></button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(skills.id)"><i class="bi bi-trash-fill"></i></button>
+            </td>
+        </div>
+        
+
+    </div>
+</div>  
+

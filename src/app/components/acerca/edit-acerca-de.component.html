@@ -1,0 +1,63 @@
+<section class="vh-100 gradient-custom">
+<div>
+    <img src="../../../assets/logo-argentina-programa.png" id="logo">
+</div>
+<div class="container" *ngIf="person"> 
+    <div class="row">
+        <div>
+            <br>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" [(ngModel)]="person.name" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="description">Descripcion</label>
+                    <input type="text" class="form-control" id="description" name="description" [(ngModel)]="person.description" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="ocupation">Ocupacion</label>
+                    <input type="text" class="form-control" id="ocupation" name="ocupation" [(ngModel)]="person.ocupation" required>
+                </div>
+                <br>
+                <!-- <div class="form-group">
+                    <label for="linkedin_url">Link de LinkedIn</label>
+                    <input type="text" class="form-control" id="linkedin_url" name="linkedin_url" [(ngModel)]="person.linkedin_url" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="github_url">Link de GitHub</label>
+                    <input type="text" class="form-control" id="github_url" name="github_url" [(ngModel)]="person.github_url" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="instagram_url">Link de Instagram</label>
+                    <input type="text" class="form-control" id="instagram_url" name="ocupainstagram_urltion" [(ngModel)]="person.instagram_url" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="whatsapp_url">Link de Whatsapp</label>
+                    <input type="text" class="form-control" id="whatsapp_url" name="whatsapp_url" [(ngModel)]="person.whatsapp_url" required>
+                </div>
+                <br> -->
+                <div class="form-group">
+                    <label for="profile_image_url">Seleccionar imagen de perfil</label>
+                    <input type="file" class="form-control" id="profile_image_url" name="profile_image_url" [(ngModel)]="person.profile_image_url" (change)="uploadProfileImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                <!-- <br>
+                <div class="form-group">
+                    <label for="banner_url">Seleccionar imagen de banner</label>
+                    <input type="file" class="form-control" id="banner_url" name="banner_url" [(ngModel)]="person.banner_url" (change)="uploadBannerImage($event)" accept=".jpg, .jpeg, .png">
+                </div> -->
+
+                <br>
+                <button class="btn btn-primary">
+                    Editar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>

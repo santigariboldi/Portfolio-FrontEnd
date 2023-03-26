@@ -1,0 +1,9 @@
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo{
+    color: #fab917;
+}

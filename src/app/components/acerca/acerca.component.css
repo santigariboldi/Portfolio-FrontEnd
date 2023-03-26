@@ -1,0 +1,58 @@
+
+
+#editar{
+    position: relative;
+    
+}
+
+
+.row {
+    padding: 10px;
+    background: linear-gradient(to right, #e9424d, #c5519b, #fab917);
+}
+
+
+div{
+    text-align: center;
+}
+
+h1{
+    text-shadow:  #5b34bf 3px 3px;
+}
+
+#titulo{
+    margin-top: 2%;
+}
+
+#nombre{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0%;
+    text-shadow:  #5b34bf 3px 3px;
+}
+
+
+
+
+@media (min-width: 576px){
+    #fotoDePerfil{
+        position: absolute;
+        width: 10%;
+        border-radius: 3%;
+        box-shadow: 4px 4px #fab819;
+        left: 3.5%;
+        top: 560px;
+    }
+}
+
+@media (max-width: 576px){
+    #fotoDePerfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 5%;
+        box-shadow: 3px 3px 3px #7FB7BE;
+        left: 35%;
+        top: 375px;
+    }
+}

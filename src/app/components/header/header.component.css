@@ -1,0 +1,11 @@
+.header{
+    background: linear-gradient(to right, #e9424d, #c5519b, #fab917);
+}
+
+.navbar{
+    padding-right: 15px;
+}
+
+app-redes{
+    float: right;
+}

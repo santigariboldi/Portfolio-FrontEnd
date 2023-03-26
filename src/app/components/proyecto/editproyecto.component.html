@@ -1,0 +1,32 @@
+<section class="vh-100 gradient-custom">
+    <div>
+        <img src="../../../assets/logo-argentina-programa.png" id="logo">
+    </div>
+<div class="container" *ngIf="proyecto">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <br>
+                <div class="form-group">
+                    <label for="nombre">Nombre del Proyecto</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="proyecto.nombre" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="descripcion">Descripcion del Proyecto</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="proyecto.descripcion" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="proyecto_image_url">Seleccionar imagen del proyecto</label>
+                    <input type="file" class="form-control" id="proyecto_image_url" name="proyecto_image_url" [(ngModel)]="proyecto.proyecto_image_url" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+                <br>
+                <button class="btn btn-primary">
+                    Editar Proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>

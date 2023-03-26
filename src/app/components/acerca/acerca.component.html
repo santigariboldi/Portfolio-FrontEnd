@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="acerca.component.css">
+<div class="container-fluid">
+    <div class="row">
+        <div>
+            <button type="button" class="btn btn-info" routerLink="/editacercade/1" *ngIf="isLogged" id="editar">
+                Editar
+            </button>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <img src="{{Person.profile_image_url}}" class="img-fluid" id="fotoDePerfil">
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <p id="nombre">{{Person.name}}</p>
+            <p>{{Person.ocupation}}</p>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <span>
+                <h1 id="titulo">Informacion Personal</h1>
+                <p id="descripcion">{{Person.description}}</p>
+            </span>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+    </div>
+</div>

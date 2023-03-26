@@ -1,0 +1,10 @@
+.container-fluid{
+    background: linear-gradient(to right, #e9424d, #c5519b, #fab917);
+    padding-right: 20Px;
+    padding-left: 20Px;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #000!important;
+}

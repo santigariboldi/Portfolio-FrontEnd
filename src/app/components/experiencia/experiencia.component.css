@@ -1,0 +1,34 @@
+h2, h3{
+    display: inline;
+}
+
+.container{
+    width: auto;
+}
+
+.descripcion, .imagen{
+    display: inline-block;
+    text-align: justify;
+}
+
+#fotoDeEmpresa{
+    width: 40%;
+    border-radius: 1%;
+    box-shadow: 2px 2px #fab819, -2px -2px #fab819;
+    
+}
+
+td{
+    vertical-align:middle;
+    
+}
+
+#nombre{
+    color: #fab917;
+    text-shadow: 2px 2px #cb4e8d;
+}
+
+.td-img {
+    text-align: center;
+    width:25%;
+}
